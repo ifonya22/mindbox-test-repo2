@@ -1,0 +1,12 @@
+[project]
+name = "package-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "geometry-calculator",
+]
+
+[tool.uv.sources]
+geometry-calculator = { path = "../geometry-calculator/dist/geometry_calculator-0.1.0-py3-none-any.whl" }

@@ -1,0 +1,21 @@
+version = 1
+requires-python = ">=3.12"
+
+[[package]]
+name = "geometry-calculator"
+version = "0.1.0"
+source = { path = "../geometry-calculator/dist/geometry_calculator-0.1.0-py3-none-any.whl" }
+wheels = [
+    { filename = "geometry_calculator-0.1.0-py3-none-any.whl", hash = "sha256:46b941f7ac3d1a34306d412d43a7f0810d337234045f35862a1a0ed8468d93de" },
+]
+
+[[package]]
+name = "package-test"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "geometry-calculator" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "geometry-calculator", path = "../geometry-calculator/dist/geometry_calculator-0.1.0-py3-none-any.whl" }]
