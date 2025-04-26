@@ -9,6 +9,7 @@
 
 ### Билд
 ```bash
+cd geometry-calculator
 uv build
 ```
 ### Установка
@@ -18,6 +19,7 @@ uv add ../geometry-calculator/dist/geometry_calculator-0.1.0-py3-none-any.whl
 
 ### Тестирование
 ```bash
+cd geometry-calculator
 uv sync
 uv run pytest
 ```
